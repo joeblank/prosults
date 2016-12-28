@@ -1,5 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Ramaraja');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+$main-font: 'Ramaraja', serif;
+$pro-font: 'Roboto', sans-serif;
+
+
 .app-outer-container {
   width: 100%;
+  .nav-container {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    .logo-wrap {
+      .logo {
+        position: absolute;
+        top: 8px;
+        left: 30px;
+        width: 34px;
+        height: 34px;
+        background: blue;
+      }
+      .prosults {
+        font-family: $pro-font;
+        font-size: 25px;
+        position: absolute;
+        top: 13px;
+        left: 85px;
+      }
+    }
+    .links-wrap {
+      width: 350px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      top: 13px;
+      right: 20px;
+      font-family: $pro-font;
+      font-size: 25px;
+      color: black;
+      .services{}
+      .about {}
+      .contact{}
+    }
+  }
+  .black-bg {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .prosults {
+      font-family: $pro-font;
+      font-size: 100px;
+      color: white;
+      z-index: 2;
+    }
+    .typing-wrap {
+      width: 100%;
+      position: absolute;
+      top: 380px;
+      display: flex;
+      justify-content: center;
+      .element{
+        font-family: $pro-font;
+        font-size: 25px;
+        color: white;
+        z-index: 2;
+      }
+      .typed-cursor{
+      opacity: 1;
+      color: white;
+      font-size: 25px;
+      margin-left: 2px;
+      -webkit-animation: blink 1s infinite;
+      -moz-animation: blink 1s infinite;
+      animation: blink 1s infinite;
+      }
+      @keyframes blink{
+          0% { opacity:1; }
+          50% { opacity:0; }
+          100% { opacity:1; }
+      }
+      @-webkit-keyframes blink{
+          0% { opacity:1; }
+          50% { opacity:0; }
+          100% { opacity:1; }
+      }
+      @-moz-keyframes blink{
+          0% { opacity:1; }
+          50% { opacity:0; }
+          100% { opacity:1; }
+      }
+    }
+  }
   .section-one-wrap {
     width: 100%;
     height: 100vh;
@@ -7,5 +108,7 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index: -1;
+    background-attachment: fixed;
   }
 }

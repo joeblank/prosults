@@ -14,7 +14,23 @@
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js'></script>
     <script src='https://code.jquery.com/jquery-3.1.1.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js'></script>
+    <script src="./typed/js/typed.js"></script>
     <script src='./dist/all.js'></script>
+    <script>
+    $(function() {
+        var one = 'DYNAMIC CONSULTING.';
+        var two = 'SUPERIOR SERVICE.';
+        var three = 'PROFESSIONAL RESULTS.'
+          $(".element").typed({
+              strings: [one, two, three],
+              typeSpeed: 100,
+              backSpeed: 50,
+              loop: true,
+              startDelay: 2500,
+              backDelay: 1000
+          });
+      });
+    </script>
 
 
   </body>
