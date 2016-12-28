@@ -9,7 +9,6 @@ const app = module.exports = express();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + './../public'));
 
-console.log(config);
 app.listen(config.port, () => {
   console.log('listening to port: ', config.port);
 })
