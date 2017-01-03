@@ -49,7 +49,7 @@ $pro-font: 'Roboto', sans-serif;
   .black-bg {
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.3);
     z-index: 1;
     position: absolute;
     top: 0px;
@@ -59,26 +59,26 @@ $pro-font: 'Roboto', sans-serif;
     flex-direction: column;
     .prosults {
       font-family: $pro-font;
-      font-size: 100px;
+      font-size: 125px;
       color: white;
       z-index: 2;
     }
     .typing-wrap {
       width: 100%;
       position: absolute;
-      top: 380px;
+      top: 400px;
       display: flex;
       justify-content: center;
       .element{
         font-family: $pro-font;
-        font-size: 25px;
+        font-size: 28px;
         color: white;
         z-index: 2;
       }
       .typed-cursor{
       opacity: 1;
       color: white;
-      font-size: 25px;
+      font-size: 28px;
       margin-left: 2px;
       -webkit-animation: blink 1s infinite;
       -moz-animation: blink 1s infinite;
@@ -109,6 +109,24 @@ $pro-font: 'Roboto', sans-serif;
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -1;
+    background-attachment: fixed;
+  }
+  .services-wrap {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    background-attachment: fixed;
+  }
+  .about-wrap {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    background-attachment: fixed;
+  }
+  .contact-wrap {
+    width: 100%;
+    height: 100vh;
+    background: green;
     background-attachment: fixed;
   }
 }
