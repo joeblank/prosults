@@ -4,8 +4,40 @@ $main-font: 'Ramaraja', serif;
 $pro-font: 'Roboto', sans-serif;
 
 
-.app-outer-container {
+.home-outer-container {
   width: 100%;
+  position: relative;
+  .black-wrap {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background: black;
+  }
+  .arrow-wrap {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    .dbl-arrow {
+      color: white;
+      font-size: 60px;
+      z-index: 21;
+      margin: auto;
+      transition: .3s;
+      // animation: arrow 1s infinite;
+    }
+    .dbl-arrow:hover {
+      font-size: 70px;
+    }
+    // @keyframes arrow {
+    //   0% {font-size: 60px}
+    //   50% {font-size: 70px}
+    //   100% {font-size: 60px}
+    // }
+  }
   .nav-container {
     width: 100%;
     height: 50px;
@@ -29,6 +61,7 @@ $pro-font: 'Roboto', sans-serif;
         position: absolute;
         top: 13px;
         left: 85px;
+        z-index: 5;
       }
     }
     .links-wrap {
@@ -49,7 +82,7 @@ $pro-font: 'Roboto', sans-serif;
   .black-bg {
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.6);
     z-index: 1;
     position: absolute;
     top: 0px;
@@ -104,29 +137,29 @@ $pro-font: 'Roboto', sans-serif;
   .section-one-wrap {
     width: 100%;
     height: 100vh;
-    background: url('./../../../images/mainBackground.jpg');
+    // background: url('./../../../images/mainBackground.jpg');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -1;
     background-attachment: fixed;
   }
-  .services-wrap {
-    width: 100%;
-    height: 100vh;
-    background: white;
-    background-attachment: fixed;
-  }
-  .about-wrap {
-    width: 100%;
-    height: 100vh;
-    background: red;
-    background-attachment: fixed;
-  }
-  .contact-wrap {
-    width: 100%;
-    height: 100vh;
-    background: green;
-    background-attachment: fixed;
-  }
+}
+.services-wrap {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  background-attachment: fixed;
+}
+.about-wrap {
+  width: 100%;
+  height: 100vh;
+  background: red;
+  background-attachment: fixed;
+}
+.contact-wrap {
+  width: 100%;
+  height: 100vh;
+  background: green;
+  background-attachment: fixed;
 }
