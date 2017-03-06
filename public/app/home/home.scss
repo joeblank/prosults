@@ -3,45 +3,49 @@
 $main-font: 'Ramaraja', serif;
 $pro-font: 'Roboto', sans-serif;
 
+a {
+  text-decoration: none;
+  color: white;
+}
 
 .home-outer-container {
   width: 100%;
   position: relative;
-  .black-wrap {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100vh;
-    background: black;
-  }
   .arrow-wrap {
     width: 100%;
     height: 75px;
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 20px;
-    .dbl-arrow {
-      color: white;
-      font-size: 60px;
-      z-index: 21;
-      margin: auto;
-      transition: .3s;
-      // animation: arrow 1s infinite;
+    bottom: 10px;
+    .icon-wrap {
+      padding-top: 5px;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0,.8);
+      border: 1px white solid;
+      border-radius: 50%;
+      transition: .2s linear;
+      cursor: pointer;
+      .dbl-arrow {
+        color: white;
+        font-size: 40px;
+        z-index: 21;
+        margin: auto;
+      }
     }
-    .dbl-arrow:hover {
-      font-size: 70px;
+    .icon-wrap:hover {
+      width: 60px;
+      height: 60px;
     }
-    // @keyframes arrow {
-    //   0% {font-size: 60px}
-    //   50% {font-size: 70px}
-    //   100% {font-size: 60px}
-    // }
   }
   .nav-container {
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: rgba(0,0,0,.8);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -53,9 +57,10 @@ $pro-font: 'Roboto', sans-serif;
         left: 30px;
         width: 34px;
         height: 34px;
-        background: blue;
+        background: orange;
       }
       .prosults {
+        color: white;
         font-family: $pro-font;
         font-size: 25px;
         position: absolute;
@@ -73,8 +78,11 @@ $pro-font: 'Roboto', sans-serif;
       right: 20px;
       font-family: $pro-font;
       font-size: 25px;
-      color: black;
-      .services{}
+      color: white;
+      .services{
+        text-decoration: none;
+        color: white;
+      }
       .about {}
       .contact{}
     }
@@ -82,67 +90,33 @@ $pro-font: 'Roboto', sans-serif;
   .black-bg {
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,.6);
-    z-index: 1;
-    position: absolute;
-    top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .prosults {
-      font-family: $pro-font;
-      font-size: 125px;
-      color: white;
-      z-index: 2;
-    }
-    .typing-wrap {
-      width: 100%;
-      position: absolute;
-      top: 400px;
-      display: flex;
-      justify-content: center;
-      .element{
-        font-family: $pro-font;
-        font-size: 28px;
-        color: white;
-        z-index: 2;
-      }
-      .typed-cursor{
-      opacity: 1;
-      color: white;
-      font-size: 28px;
-      margin-left: 2px;
-      -webkit-animation: blink 1s infinite;
-      -moz-animation: blink 1s infinite;
-      animation: blink 1s infinite;
-      }
-      @keyframes blink{
-          0% { opacity:1; }
-          50% { opacity:0; }
-          100% { opacity:1; }
-      }
-      @-webkit-keyframes blink{
-          0% { opacity:1; }
-          50% { opacity:0; }
-          100% { opacity:1; }
-      }
-      @-moz-keyframes blink{
-          0% { opacity:1; }
-          50% { opacity:0; }
-          100% { opacity:1; }
-      }
-    }
-  }
-  .section-one-wrap {
-    width: 100%;
-    height: 100vh;
-    // background: url('./../../../images/mainBackground.jpg');
+    background: url('./../../../images/desk.jpg');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    z-index: -1;
     background-attachment: fixed;
+    .pro-sults-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .prosults {
+        font-family: $pro-font;
+        font-size: 125px;
+        color: white;
+        z-index: 2;
+      }
+      .motto {
+        font-family: $pro-font;
+        font-size: 40px;
+        color: white;
+        margin-top: 20px;
+      }
+    }
   }
 }
 .services-wrap {

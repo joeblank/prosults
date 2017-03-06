@@ -1,4 +1,4 @@
-angular.module('prosults', ['ui.router'])
+angular.module('prosults', ['ui.router', 'duScroll'])
 .config(($stateProvider, $urlRouterProvider) => {
 
   $urlRouterProvider.otherwise('/');
