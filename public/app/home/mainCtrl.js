@@ -1,6 +1,14 @@
 angular.module('prosults')
-.controller('mainCtrl', ($scope, $timeout, mainService) => {
+.controller('mainCtrl', ($scope, $timeout, mainService, preloader) => {
 
+  $scope.jumbotron = [
+    './../../../images/mainBackground.jpg'
+  ]
+
+  $scope.prosults = 'haha'
+  // preloader.preloadImages( $scope.jumbotron ).then(response => {
+  //   console.log('here',response);
+  // })
 
 
   //===jquery for typed.js

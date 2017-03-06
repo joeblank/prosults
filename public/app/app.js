@@ -1,4 +1,4 @@
-angular.module('prosults', ['ui.router'])
+angular.module('prosults', ['ui.router', 'duScroll'])
 .config(($stateProvider, $urlRouterProvider) => {
 
   $urlRouterProvider.otherwise('/');
@@ -6,7 +6,8 @@ angular.module('prosults', ['ui.router'])
   $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: './app/home/home.html'
+    templateUrl: './app/home/home.html',
+    controller: 'mainCtrl'
   })
 
 
