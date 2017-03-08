@@ -9,9 +9,10 @@ angular.module('prosults')
         if(scrollTracker > 50) {
           // $('.prosults, .about, .contact, .services').fadeOut();
           $('.nav-container').fadeOut(750);
-
+          $('.side-menu-wrap').fadeIn(750);
         } else {
           $('.nav-container').fadeIn(750);
+          $('.side-menu-wrap').fadeOut(750);
         }
       })
 
